@@ -1,5 +1,3 @@
 .venv
 .idea
-learn/__pycache__
-learn/chapter_2/__pycache__
-learn/util/__pycache__/
+__pycache__/

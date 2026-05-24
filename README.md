@@ -2,7 +2,7 @@
 
 ## chapter 3 illustrations: 
 ### *picture 1. How blocking socket works.*
-![img.png](img.png)
+![img_1.png](img_1.png)
 <br>
 <br>
 <br>

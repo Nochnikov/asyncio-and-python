@@ -35,7 +35,7 @@ try:
     as we have already seen method ```.accept() returned tuple 
     with two arguments.  
     
-    variable ```connection``` is a socket object, and has 
+    variable ```connection``` (which is client socket actually) is a socket object, and has 
     a method named ```recv``` that we have to use to get 
     data from a particular socket. The method takes as an integer 
     the number of bytes we want to receive from the socket. It calls 

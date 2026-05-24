@@ -7,7 +7,7 @@ However there are still two main problems:
        does not send their first message 
        second one will be blocked and will not receive anything
        This causes other clients to be stuck waiting for the next iteration of the loop, 
-       which won’t happen until the first client sends us data. Picture 1 in README.MD 
+       which won’t happen until the first client sends us data. Picture 1 in chapter_3/README.MD 
    2. Non-blocking sockets requires connections immediately.
       Like if we run that application mostly we would have an error like 
       ``BlockingIOError``` which means that socker has no connection yet 
@@ -23,7 +23,7 @@ to potentially error-prone, also it takes a lot of resource.
 The second is a resource issue. This application will always
 be using nearly 100% of our CPU’s processing power. This is because we
 are constantly looping and getting exceptions as fast as we can inside our application,
-leading to a workload that is CPU heavy. Picture 2 in README.MD
+leading to a workload that is CPU heavy. Picture 2 in chapter_3/README.MD
 """
 
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

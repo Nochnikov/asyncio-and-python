@@ -60,5 +60,3 @@ while True:
             data = event_socket.recv(1024)
             print(f'I got some data: {data}')
             event_socket.send(data)
-
-

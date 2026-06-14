@@ -19,6 +19,12 @@ async def insert_brands(common_words, connection) -> int:
     brands = generate_brand_names(common_words)
 
     insert_brands = 'INSERT INTO brand VALUES (DEFAULT, $1)'
+    """
+    Internally, executemany will loop through our brands list and generate one INSERT
+    statement per each brand. Then it will execute all those insert statements at once.
+    This method of parameterization will also prevent us from SQL injection attacks, as
+    the input data is sanitized. Once we run this, we should have 100 brands in our system
+    with random names."""
     return await connection.executemany(insert_brands, brands)
 
 async def main():

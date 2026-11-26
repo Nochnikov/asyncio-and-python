@@ -2,3 +2,4 @@
 .idea
 __pycache__/
 googlebooks-eng-all-1gram-20120701-a
+learn/.env
